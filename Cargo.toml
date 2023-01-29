@@ -1,0 +1,13 @@
+[package]
+name = "cleardir"
+version = "0.1.0"
+edition = "2021"
+description="cleardir compares the SHA256 checksums of the files in the specified directories. If multiple files with the same checksum are found in a directory, all files except the one with the shortest filename are deleted. CAUTION: Files will be deleted without further inquiry. Use at your own risk."
+license="MIT OR Apache-2.0"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+ansi_term = "0.12.1"
+clap = "4.0.29"
+sha2 = "0.10.6"
